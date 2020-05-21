@@ -9,6 +9,13 @@ Clone the repo:
 $ git clone https://github.com/zendiy-mgos/zswitch-mqtt-demo my-zswitch-mqtt-demo
 $ cd my-zswitch-mqtt-demo
 ```
+Configure the connection to your MQTT broker:
+```yaml
+config_schema:
+  - ["mqtt.server", <your_mqtt_brocker_ip>:<port>]
+  - ["mqtt.user", <your_username>]
+  - ["mqtt.pass", <your_password>]
+```
 Enable JavaScript demo (skip to continue with C/C++ demo) :
 ```yaml
 sources:
