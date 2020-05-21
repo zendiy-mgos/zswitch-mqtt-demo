@@ -8,9 +8,9 @@ modules_version: ${mos.version}
 mongoose_os_version: ${mos.version}
 
 config_schema:
-  - ["mqtt.server", "your_mqtt_brocker_ip:8883"]
-  - ["mqtt.user", "your_username"]
-  - ["mqtt.pass", "your_password"]
+  - ["mqtt.server", "<address_or_name>:<port>"]
+  - ["mqtt.user", "<your_username>"]
+  - ["mqtt.pass", "<your_password>"]
   
   - ["mqtt.enable", true]
   - ["mqtt.ssl_ca_cert", "ca.pem"]
