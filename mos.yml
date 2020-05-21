@@ -44,10 +44,10 @@ includes:
 sources:
   # NOTE: comment the row below and exclude 'mjs' library
   # in [libs] section to disable C/C++ demo.
-  #- src
+  - src
   # NOTE: remove the comment below and include 'mjs' library
   # in [libs] section to enable the JS demo.
-  - src_js
+  #- src_js
 tags:
   - js
 filesystem:
@@ -68,4 +68,4 @@ libs:
 
   # NOTE: remove comment below and use the 'src_js' as sources folder
   # to enable the JS demo (see ./fs/init.js).
-  - origin: https://github.com/mongoose-os-libs/mjs
+  #- origin: https://github.com/mongoose-os-libs/mjs
