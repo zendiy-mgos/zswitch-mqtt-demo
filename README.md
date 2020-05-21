@@ -6,8 +6,8 @@ Build up your device in few minutes just downloading, compiling and flashing thi
 
 Clone the repo:
 ```bash
-$ git clone https://github.com/zendiy-mgos/zswitch-gpio-demo my-zswitch-gpio-demo
-$ cd my-zswitch-gpio-demo
+$ git clone https://github.com/zendiy-mgos/zswitch-mqtt-demo my-zswitch-mqtt-demo
+$ cd my-zswitch-mqtt-demo
 ```
 Enable JavaScript demo (skip to continue with C/C++ demo) :
 ```yaml
@@ -32,7 +32,7 @@ $ mos flash --port <port_name>
  - Wemos relay shield (2x)
  - 5V DC power supply (via min-USB cable or via external power supply)
 ### Wiring schema
-![zswitch-gpio demo wiring schema](docs/zswitch-gpio-demo-sketch_bb.png)
+![zswitch-mqtt demo wiring schema](docs/zswitch-mqtt-demo-sketch_bb.png)
 ## Additional resources
 Take a look to some other demo samples.
 
