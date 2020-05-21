@@ -12,7 +12,7 @@ $ cd my-zswitch-mqtt-demo
 Configure the connection to your MQTT broker:
 ```yaml
 config_schema:
-  - ["mqtt.server", <your_mqtt_brocker_ip>:<port>]
+  - ["mqtt.server", <address_or_name>:<port>]
   - ["mqtt.user", <your_username>]
   - ["mqtt.pass", <your_password>]
 ```
