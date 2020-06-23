@@ -1,5 +1,5 @@
 author: ZenDIY
-description: Mongoose OS demo firmware for using MQTT to drive Zen Switches
+description: Mongoose OS demo firmware for using MQTT to drive ZenSwitches
 # arch: PLATFORM
 version: 1.0
 manifest_version: 2017-05-18
