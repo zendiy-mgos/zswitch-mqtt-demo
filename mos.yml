@@ -1,5 +1,5 @@
 author: ZenDIY
-description: Mongoose OS demo firmware for using MQTT to drive Zen Switches
+description: Mongoose OS demo firmware for using MQTT to drive ZenSwitches
 # arch: PLATFORM
 version: 1.0
 manifest_version: 2017-05-18
@@ -8,17 +8,16 @@ modules_version: ${mos.version}
 mongoose_os_version: ${mos.version}
 
 config_schema:
-  - ["device.id", "ZT??????"]
+  - ["mqtt.server", "<address_or_name>:<port>"]
+  - ["mqtt.user", "<your_username>"]
+  - ["mqtt.pass", "<your_password>"]
+  
   - ["mqtt.enable", true]
+  - ["mqtt.ssl_ca_cert", "ca.pem"]
   - ["mqtt.keep_alive", 20]
   - ["mqtt.will_topic", "$zt/${device_id}/availability"]
   - ["mqtt.will_message", "offline"]
   - ["mqtt.will_retain", true]
-  #  MQTT settings for my local Mosquito instance (Hassio)
-  - ["mqtt.server", "192.168.1.254:8883"]
-  - ["mqtt.ssl_ca_cert", "ca.pem"]
-  - ["mqtt.user", "gaojing@hotmail.it"]
-  - ["mqtt.pass", "Marika2414"]
 
   - ["zthing.mqtt.birth_message", "online"]
   - ["zthing.mqtt.qos", 1]
